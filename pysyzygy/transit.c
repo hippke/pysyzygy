@@ -685,7 +685,7 @@ int Interpolate(double *t, int ipts, int array, TRANSIT *transit, LIMBDARK *limb
   
   j = 0;                                                                              // The interpolation index
   nt = 0;                                                                             // The transit number
-  transit->tN[transit->ntrans] = HUGE;                                                // A bit of a hack, but essential to get the last transit right below
+  transit->tN[transit->ntrans] = 99999999999999999;                                                // A bit of a hack, but essential to get the last transit right below
     
   for (i = 0; i < ipts; i++) {
     
